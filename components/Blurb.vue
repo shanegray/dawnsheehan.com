@@ -1,6 +1,7 @@
 <template>
   <div class="blurb">
-    I'm an artist and I have very little to say about myself
+    My name is Dawn Sheehan and some day I'll fill in a quick bio here around
+    this length in text
   </div>
 </template>
 
@@ -8,5 +9,7 @@
 .blurb {
   font-style: italic;
   margin-bottom: 2rem;
+  font-size: 1.4em;
+  color: #8d8d8d;
 }
 </style>

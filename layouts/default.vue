@@ -44,6 +44,11 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+body {
+  background-color: #f7fcf4;
+}
+
 #wrapper {
   width: 900px;
   margin: 0 auto;

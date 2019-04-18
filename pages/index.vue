@@ -1,5 +1,6 @@
 <template>
   <section>
+    <!-- <img src="~/assets/img/one.jpg" /> -->
     <item-preview
       v-for="item in items"
       :key="item.slug"
@@ -24,38 +25,32 @@ export default {
         {
           title: 'Painting One',
           price: '€30.00',
-          thumbnailUrl: 'https://via.placeholder.com/600.png/FF0000',
+          thumbnailUrl: require('~/assets/img/one.jpg'),
           slug: 'painting-one'
         },
         {
           title: 'Painting Two',
           price: '€12.00',
-          thumbnailUrl: 'https://via.placeholder.com/800.png/00FF00',
+          thumbnailUrl: require('~/assets/img/two.jpg'),
           slug: 'painting-two'
         },
         {
           title: 'Painting Two',
           price: '€12.00',
-          thumbnailUrl: 'https://via.placeholder.com/250.png/0000FF',
+          thumbnailUrl: require('~/assets/img/three.jpg'),
           slug: 'painting-three'
         },
         {
           title: 'Painting Two',
           price: '€12.00',
-          thumbnailUrl: 'https://via.placeholder.com/450.png/FF0000',
+          thumbnailUrl: require('~/assets/img/four.jpg'),
           slug: 'painting-four'
         },
         {
           title: 'Painting Two',
           price: '€12.00',
-          thumbnailUrl: 'https://via.placeholder.com/300.png/FF0000',
+          thumbnailUrl: require('~/assets/img/five.jpg'),
           slug: 'painting-five'
-        },
-        {
-          title: 'Painting Two',
-          price: '€12.00',
-          thumbnailUrl: 'https://via.placeholder.com/700.png/FF0000',
-          slug: 'painting-six'
         }
       ]
     }
