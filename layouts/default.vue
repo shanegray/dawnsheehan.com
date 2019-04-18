@@ -5,7 +5,6 @@
       <social-links />
     </div>
     <main id="main">
-      <blurb />
       <nuxt />
     </main>
   </div>
@@ -14,13 +13,11 @@
 <script>
 import Logo from '@/components/Logo'
 import SocialLinks from '@/components/SocialLinks'
-import Blurb from '@/components/Blurb'
 
 export default {
   components: {
     Logo,
-    SocialLinks,
-    Blurb
+    SocialLinks
   }
 }
 </script>
@@ -53,6 +50,14 @@ body {
   width: 900px;
   margin: 0 auto;
 }
+@media (max-width: 900px) {
+  #wrapper {
+    width: 95%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 #side-bar {
   position: fixed;
@@ -67,8 +72,25 @@ body {
   padding-top: 10rem;
 }
 
+@media (max-width: 900px) {
+  #side-bar {
+    top: auto;
+    bottom: auto;
+    position: relative;
+    padding-top: 1rem;
+    width: 100%;
+  }
+}
+
 #main {
   margin-left: 13.75rem;
   padding: 3.125rem 0;
+}
+@media (max-width: 900px) {
+  #main {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 </style>

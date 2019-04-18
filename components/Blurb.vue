@@ -12,4 +12,11 @@
   font-size: 1.4em;
   color: #8d8d8d;
 }
+
+@media (max-width: 900px) {
+  .blurb {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
 </style>

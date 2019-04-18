@@ -23,9 +23,9 @@
   flex-direction: column;
 }
 .image-list img {
-  width: 90%;
+  width: 95%;
+  margin: 1rem auto;
   max-height: 600px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
-  margin-bottom: 1rem;
 }
 </style>

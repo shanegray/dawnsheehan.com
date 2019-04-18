@@ -16,4 +16,7 @@
   letter-spacing: 1px;
   margin-bottom: 2rem;
 }
+@media (max-width: 900px) {
+  margin-bottom: 1rem;
+}
 </style>

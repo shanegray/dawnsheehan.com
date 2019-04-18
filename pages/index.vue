@@ -1,6 +1,6 @@
 <template>
   <section>
-    <!-- <img src="~/assets/img/one.jpg" /> -->
+    <blurb />
     <item-preview
       v-for="item in items"
       :key="item.slug"
@@ -14,10 +14,12 @@
 
 <script>
 import ItemPreview from '@/components/Items/ItemPreview'
+import Blurb from '@/components/Blurb'
 
 export default {
   components: {
-    ItemPreview
+    ItemPreview,
+    Blurb
   },
   data() {
     return {
