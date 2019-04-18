@@ -7,5 +7,6 @@
 <style scoped>
 .blurb {
   font-style: italic;
+  margin-bottom: 2rem;
 }
 </style>

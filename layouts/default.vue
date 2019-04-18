@@ -2,7 +2,6 @@
   <div id="wrapper">
     <div id="side-bar">
       <logo />
-      <page-links />
       <social-links />
     </div>
     <main id="main">
@@ -14,14 +13,12 @@
 
 <script>
 import Logo from '@/components/Logo'
-import PageLinks from '@/components/PageLinks'
 import SocialLinks from '@/components/SocialLinks'
 import Blurb from '@/components/Blurb'
 
 export default {
   components: {
     Logo,
-    PageLinks,
     SocialLinks,
     Blurb
   }
@@ -49,11 +46,24 @@ html {
 }
 #wrapper {
   width: 900px;
-  margin: 2rem auto;
+  margin: 0 auto;
+}
+
+#side-bar {
+  position: fixed;
+  width: 13.75rem;
+  bottom: 0;
+  top: 0;
+
   display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  padding-top: 10rem;
 }
 
 #main {
-  flex: 1 auto;
+  margin-left: 13.75rem;
+  padding: 3.125rem 0;
 }
 </style>

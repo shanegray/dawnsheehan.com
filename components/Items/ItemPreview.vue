@@ -2,6 +2,8 @@
   <nuxt-link :to="slug">
     <article>
       <img class="image" :src="thumbnailUrl" :alt="title" />
+      <span>{{ title }}</span>
+      <span>{{ price }}</span>
     </article>
   </nuxt-link>
 </template>
