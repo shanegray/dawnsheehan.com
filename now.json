@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "alias": ["www.dawnsheehan.com", "dawnsheehan.com"],
+  "alias": ["www.dawnsheehan.com"],
   "routes": [
     {
       "src": "/(.*)",
