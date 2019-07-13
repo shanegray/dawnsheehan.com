@@ -6,7 +6,7 @@
       "src": "/(.*)",
       "status": 301,
       "headers": {
-        "Location": "https://www.dawnsheehan.com/$1"
+        "Location": "https://dawnsheehan.com/$1"
       }
     }
   ],
