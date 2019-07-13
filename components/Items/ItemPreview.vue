@@ -1,13 +1,10 @@
 <template>
   <nuxt-link :to="slug">
     <article>
-      <img class="image" :src="thumbnailUrl" :alt="title" />
+      <img class="image" :src="src" :alt="title" :srcset="srcset" />
       <div class="image-text">
         <span>{{ title }}</span>
         <span>{{ price }}</span>
-        <div>
-          <em>Shane will fix this later</em>
-        </div>
       </div>
     </article>
   </nuxt-link>
@@ -25,14 +22,20 @@ export default {
       required: false,
       default: ''
     },
-    thumbnailUrl: {
-      type: String,
-      required: false,
-      default: ''
-    },
     slug: {
       type: String,
       required: true
+    },
+    srcset: {
+      type: String,
+      required: true
+    }
+  },
+  computed: {
+    src() {
+      return `https://res.cloudinary.com/dzdl7auuv/image/upload/c_fill,g_auto/c_scale,w_700/v1563014234/dawnsheehan/${
+        this.slug
+      }.jpg`
     }
   }
 }

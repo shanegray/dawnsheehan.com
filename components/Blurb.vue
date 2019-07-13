@@ -1,7 +1,6 @@
 <template>
   <div class="blurb">
-    My name is Dawn Sheehan and some day I'll fill in a quick bio here around
-    this length in text
+    My name is Dawn Sheehan. This site is under construction
   </div>
 </template>
 
