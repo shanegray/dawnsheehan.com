@@ -1,6 +1,15 @@
 {
   "version": 2,
-  "alias": ["www.dawnsheehan.com"],
+  "alias": ["www.dawnsheehan.com", "dawnsheehan.com"],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 301,
+      "headers": {
+        "Location": "https://www.dawnsheehan.com/$1"
+      }
+    }
+  ],
   "builds": [
     {
       "src": "package.json",
